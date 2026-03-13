@@ -1,0 +1,8 @@
+# Credenciales - NUNCA commitear esto
+.env
+
+# Tokens de Garmin (se guardan localmente)
+~/.garmin-mcp/
+
+# Node
+node_modules/
