@@ -46,6 +46,34 @@ El MCP tiene **61 herramientas** en 7 categorías:
 | **Estrés** | "¿Cómo estuvo mi nivel de estrés hoy?" |
 | **Perfil** | "¿Qué dispositivos Garmin tengo?" |
 
+## Estadísticas semanales de running
+
+Obtén un resumen automático de tus carreras de la semana con el script incluido:
+
+```bash
+# Últimos 7 días (por defecto)
+./weekly_running_stats.sh
+
+# Últimas 2 semanas
+./weekly_running_stats.sh 14
+```
+
+El script genera un análisis que incluye:
+
+| Dato | Descripción |
+|------|-------------|
+| Número de carreras | Cuántas salidas hiciste |
+| Distancia total | Kilómetros acumulados |
+| Tiempo total | Duración sumada de todas las carreras |
+| Ritmo promedio | Minutos por kilómetro |
+| FC promedio | Frecuencia cardíaca media |
+| Mejor carrera | La más larga o de mejor ritmo |
+| Tendencia | Comparación con semanas anteriores |
+
+> **Requisito**: tener Claude Code instalado y el MCP configurado con `./setup.sh`
+
+---
+
 ## Seguridad
 
 - El archivo `.env` está en `.gitignore` — tus credenciales **nunca** se suben al repositorio
